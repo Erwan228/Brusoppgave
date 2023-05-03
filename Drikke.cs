@@ -2,8 +2,8 @@
 {
     public class Drikke
     {
-        private string _navn { get; set; }
-        private int _pris { get; set; }
+        private string _navn;
+        private int _pris;
         public Drikke(string navn, int pris)
         {
             _navn = navn;

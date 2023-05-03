@@ -3,7 +3,7 @@
     public class Lagerbeholdning
     {
         public Drikke Drikke { get; }
-        private int _antall { get; set; }
+        private int _antall;
         public Lagerbeholdning(Drikke drikke, int antall)
         {
             Drikke = drikke;
