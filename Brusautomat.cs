@@ -54,17 +54,15 @@
         }
         public void BuyStuff(string navn)
         {
-            var id = 0;
-            bool haveDrink = false;
+            Drikke theDrink = null;
             foreach (var drink in Lager)
             {
-                if (drink.Drikke.GetNavn() == navn && drink.GetAntall() > 0)
+                if (drink.IsAvailable(navn))
                 {
                     haveDrink = true;
                     break;
 
                 }
-                else id++;
             };
 
             if (haveDrink) { HaveDrink(navn, id); }

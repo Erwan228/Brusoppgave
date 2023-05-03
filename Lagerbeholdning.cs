@@ -17,5 +17,9 @@
         {
             _antall -= reduce;
         }
+        public bool IsAvailable(string navn)
+        {
+            return Drikke.GetNavn() == navn && GetAntall() > 0;
+        }
     }
 }
